@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div id="container"  class="container"> 
+        <div class="row">
+            <div class="row1 sign-up">
+                <div class="form sign-up">
+                    <div class="inputBx">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" placeholder="User Name">
+                    </div>
+                    <div class="inputBx">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="mail" placeholder="Email">
+                    </div>
+                    <div class="inputBx">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="inputBx">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <button>
+                        Sign up
+                    </button>
+                    <P>
+                        Already have an account ?
+                        <a href="#" onclick="toggle()">
+                            Sign in here
+                        </a>
+                    </P>
+                </div>
+                <div class="contacts sign-up">
+                    <div class="contact sign-up">
+                        <a href="#">
+                            <img src="./Image/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+
+                    <div class="contact sign-up">
+                        <a href="#">
+                            <img src="./Image/instagram.png" alt="instagram">
+                        </a>
+                    </div> 
+
+                    <div class="contact sign-up">
+                        <a href="#">
+                            <img src="./Image/google.png" alt="google">
+                        </a>
+                    </div> 
+
+                    <div class="contact sign-up">
+                        <a href="#">
+                            <img src="./Image/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row1 sign-in">
+                <div class="form sign-in">
+                    <div class="inputBx">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">User Name</label>
+                    </div>
+                    <div class="inputBx">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <button>
+                        Sign in
+                    </button>
+                    <div class="link">
+                        <a href="#">
+                            Forgot Password
+                        </a>
+                    </div>
+                    <P>
+                        Don't have an account ?
+                        <a href="#" onclick="toggle()">
+                            Sign up here
+                        </a>
+                    </P>
+                </div>
+
+                <div class="contacts sign-in">
+                    <div class="contact sign-in">
+                        <a href="#">
+                            <img src="./Image/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+
+                    <div class="contact sign-in">
+                        <a href="#">
+                            <img src="./Image/instagram.png" alt="instagram">
+                        </a>
+                    </div> 
+
+                    <div class="contact sign-in">
+                        <a href="#">
+                            <img src="./Image/google.png" alt="google">
+                        </a>
+                    </div> 
+
+                    <div class="contact sign-in">
+                        <a href="#">
+                            <img src="./Image/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="BgColor">
+            <div class="row2">
+                <div class="text sign-in">
+                    <h2>
+                        Welcome back
+                    </h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit obcaecati, accusantium
+                        molestias, laborum, aspernatur deserunt officia voluptatum tempora dicta quo ab ullam. Assumenda
+                        enim harum minima possimus dignissimos deserunt rem.
+                    </p>
+                    <div class="img sign-in">
+                        <img src="./Image/undraw_my_password_re_ydq7.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="text sign-up">
+                    <div class="img sign-up">
+                        <img src="./Image/undraw_secure_login_pdn4.svg" alt="">
+                    </div>
+                    <h2>
+                        Join with us
+                    </h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit obcaecati, accusantium
+                        molestias, laborum, aspernatur deserunt officia voluptatum tempora dicta quo ab ullam. Assumenda
+                        enim harum minima possimus dignissimos deserunt rem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------Icon------- -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+		let container = document.getElementById('container')
+
+		toggle = () => {
+			container.classList.toggle('sign-in')
+			container.classList.toggle('sign-up')
+		}
+		setTimeout(() => {
+		container.classList.add('sign-in')
+		}, 200)
+	</script>
+</body>
+</html>
